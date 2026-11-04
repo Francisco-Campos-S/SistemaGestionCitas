@@ -49,8 +49,8 @@ Desarrollar una aplicación de escritorio utilizando C# y Windows Forms que perm
 - *Limpieza y Mensajes:* Botones para limpiar controles de texto y alertas de éxito o error.
 
 ## Distribución Inicial de Tareas
-1.Brithany Fallas Angulo:
-2.Yorleny Angulo Chamorro:
+1.Brithany Fallas Angulo:Creacion de la conexion de git y GitHub
+2.Yorleny Angulo Chamorro:Creaciòn de README.md y propuesta.md
 3.Leandro Aragón Arias:
-4. Josué Rodríguez Agüero:
+4.Josué Rodríguez Agüero:
 5. Veronica Nuñez Cubillo:
