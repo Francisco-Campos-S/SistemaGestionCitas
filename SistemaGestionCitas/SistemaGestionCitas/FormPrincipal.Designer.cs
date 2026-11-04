@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarCitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regristrarServiciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarCitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarOCancelarCitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelarCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,12 +47,34 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pacientesToolStripMenuItem,
             this.citasToolStripMenuItem,
-            this.salirToolStripMenuItem});
+            this.salirToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // pacientesToolStripMenuItem
+            // 
+            this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarClientesToolStripMenuItem,
+            this.regristrarServiciosToolStripMenuItem});
+            this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
+            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
+            this.pacientesToolStripMenuItem.Text = "Clientes y Servicios";
+            // 
+            // registrarClientesToolStripMenuItem
+            // 
+            this.registrarClientesToolStripMenuItem.Name = "registrarClientesToolStripMenuItem";
+            this.registrarClientesToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.registrarClientesToolStripMenuItem.Text = "Registrar Clientes";
+            // 
+            // regristrarServiciosToolStripMenuItem
+            // 
+            this.regristrarServiciosToolStripMenuItem.Name = "regristrarServiciosToolStripMenuItem";
+            this.regristrarServiciosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.regristrarServiciosToolStripMenuItem.Text = "Servicios Disponibles";
             // 
             // citasToolStripMenuItem
             // 
@@ -64,14 +87,30 @@
             this.citasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.citasToolStripMenuItem.Text = "Citas";
             // 
-            // pacientesToolStripMenuItem
+            // registrarCitaToolStripMenuItem
             // 
-            this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarClientesToolStripMenuItem,
-            this.regristrarServiciosToolStripMenuItem});
-            this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
-            this.pacientesToolStripMenuItem.Text = "Clientes y Servicios";
+            this.registrarCitaToolStripMenuItem.Name = "registrarCitaToolStripMenuItem";
+            this.registrarCitaToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.registrarCitaToolStripMenuItem.Text = "Registrar Cita";
+            this.registrarCitaToolStripMenuItem.Click += new System.EventHandler(this.registrarCitaToolStripMenuItem_Click);
+            // 
+            // consultarCitasToolStripMenuItem
+            // 
+            this.consultarCitasToolStripMenuItem.Name = "consultarCitasToolStripMenuItem";
+            this.consultarCitasToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.consultarCitasToolStripMenuItem.Text = "Consultar Citas";
+            // 
+            // modificarOCancelarCitaToolStripMenuItem
+            // 
+            this.modificarOCancelarCitaToolStripMenuItem.Name = "modificarOCancelarCitaToolStripMenuItem";
+            this.modificarOCancelarCitaToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.modificarOCancelarCitaToolStripMenuItem.Text = "Modificar Citas";
+            // 
+            // cancelarCitasToolStripMenuItem
+            // 
+            this.cancelarCitasToolStripMenuItem.Name = "cancelarCitasToolStripMenuItem";
+            this.cancelarCitasToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.cancelarCitasToolStripMenuItem.Text = "Cancelar Citas";
             // 
             // salirToolStripMenuItem
             // 
@@ -79,42 +118,11 @@
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
-            // registrarCitaToolStripMenuItem
+            // toolStripMenuItem1
             // 
-            this.registrarCitaToolStripMenuItem.Name = "registrarCitaToolStripMenuItem";
-            this.registrarCitaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registrarCitaToolStripMenuItem.Text = "Registrar Cita";
-            this.registrarCitaToolStripMenuItem.Click += new System.EventHandler(this.registrarCitaToolStripMenuItem_Click);
-            // 
-            // consultarCitasToolStripMenuItem
-            // 
-            this.consultarCitasToolStripMenuItem.Name = "consultarCitasToolStripMenuItem";
-            this.consultarCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultarCitasToolStripMenuItem.Text = "Consultar Citas";
-            // 
-            // registrarClientesToolStripMenuItem
-            // 
-            this.registrarClientesToolStripMenuItem.Name = "registrarClientesToolStripMenuItem";
-            this.registrarClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registrarClientesToolStripMenuItem.Text = "Registrar Clientes";
-            // 
-            // regristrarServiciosToolStripMenuItem
-            // 
-            this.regristrarServiciosToolStripMenuItem.Name = "regristrarServiciosToolStripMenuItem";
-            this.regristrarServiciosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.regristrarServiciosToolStripMenuItem.Text = "Servicios Disponibles";
-            // 
-            // modificarOCancelarCitaToolStripMenuItem
-            // 
-            this.modificarOCancelarCitaToolStripMenuItem.Name = "modificarOCancelarCitaToolStripMenuItem";
-            this.modificarOCancelarCitaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.modificarOCancelarCitaToolStripMenuItem.Text = "Modificar Citas";
-            // 
-            // cancelarCitasToolStripMenuItem
-            // 
-            this.cancelarCitasToolStripMenuItem.Name = "cancelarCitasToolStripMenuItem";
-            this.cancelarCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cancelarCitasToolStripMenuItem.Text = "Cancelar Citas";
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(25, 20);
+            this.toolStripMenuItem1.Text = "  ";
             // 
             // FormPrincipal
             // 
@@ -144,6 +152,7 @@
         private System.Windows.Forms.ToolStripMenuItem regristrarServiciosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarOCancelarCitaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cancelarCitasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

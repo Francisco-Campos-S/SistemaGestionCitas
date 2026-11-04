@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="SistemaGestionCitas/SistemaGestionCitas.csproj" />
+  <Folder Name="/docs/">
+    <File Path="propuesta.md" />
+  </Folder>
+  <Project Path="SistemaGestionCitas/SistemaGestionCitas.csproj" Id="62c7851b-e321-4ca1-b688-fe5e97e362b9" />
 </Solution>
